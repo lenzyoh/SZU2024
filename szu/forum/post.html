@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SZU Forum - Objava</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./post.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <h1 class="navbar__title">SZU Forum</h1>
+      </div>
+      <main class="content-wrapper">
+        <div class="post"></div>
+        <div class="bottom-wrapper">
+          <ol class="comments"></ol>
+          <form class="new-comment-form" id="comment-form">
+            <h1 class="new-comment-form__title">Napisite komentar</h1>
+            <input
+              class="new-comment-form__input"
+              placeholder="Napisite ime"
+              type="text"
+              name="author"
+              id="author"
+            />
+            <textarea
+              class="new-comment-form__textarea"
+              name="content"
+              id="content"
+              cols="30"
+              rows="5"
+              placeholder="Napišite svoj komentar ovdje"
+            ></textarea>
+            <button type="submit" class="new-comment-form__button">
+              Dodaj
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="./seed.js"></script>
+    <script src="./post.js"></script>
+  </body>
+</html>

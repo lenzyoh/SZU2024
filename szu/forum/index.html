@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SZU Forum</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <h1 class="navbar__title">SZU Forum</h1>
+      </div>
+      <main class="content-wrapper">
+        <div class="posts-wrapper">
+          <ol class="posts-list"></ol>
+          <form class="new-post-form">
+            <h1 class="new-post-form__title">Napravite objavu</h1>
+            <input
+              class="new-post-form__input"
+              placeholder="Naslov objave"
+              type="text"
+              name="title"
+              id="title"
+            />
+            <textarea
+              class="new-post-form__textarea"
+              name="content"
+              id="content"
+              cols="30"
+              rows="5"
+              placeholder="Napišite svoju objavu ovdje"
+            ></textarea>
+            <button type="submit" class="new-post-form__button">Objavi</button>
+          </form>
+        </div>
+        <aside class="sidebar">
+          <h2 class="sidebar__title">Resursi za ucenje</h2>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="../resursi.html">Izbornik</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Moodle</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">SZU e-knjiznica</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">SZU e-ucenje</a>
+            </li>
+          </ul>
+          <h2 class="sidebar__title">Administracija</h2>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="#">Prijavi se</a>
+            </li>
+          </ul>
+          <h2 class="sidebar__title">Kontakt</h2>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="../kontakt.html">Kontaktirajte nas</a>
+            </li>
+          </ul>
+        </aside>
+      </main>
+    </div>
+
+    <script src="./seed.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
